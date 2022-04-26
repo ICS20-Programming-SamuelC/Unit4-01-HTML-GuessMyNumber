@@ -1,7 +1,7 @@
-// Copyright (c) 2022 Ms Raffin All rights reserved
+// Copyright (c) 2022 Samuel Carlson All rights reserved
 //
-// Created by: Ms Raffin
-// Created on: March 2022
+// Created by: Samuel Carlson
+// Created on: April 2022
 // This file contains the JS functions for index.html
 
 "use strict"
@@ -9,7 +9,7 @@
 Math.floor((Math.random() * max6) + min6);
 
 /**
- * This function displays a greeting based on the hour of the day
+ * This function displays an answer based on the guess
  */
 function displayAnswer () {
   	// initialize variables
@@ -19,7 +19,7 @@ function displayAnswer () {
 	let guess = parseInt(document.getElementById('guess').value)
 
 
-  	// if hour is before noon, display "Good morning"
+  	// if guess is random number, display "Correct"
 	if (guess random) {
 		answer = "Correct!"
 	} 
