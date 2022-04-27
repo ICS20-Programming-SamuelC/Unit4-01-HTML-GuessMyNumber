@@ -6,24 +6,36 @@
 
 "use strict"
 
-Math.floor((Math.random() * max6) + min6);
 
 /**
  * This function displays an answer based on the guess
  */
 function displayAnswer () {
+  // declare constants
+  const MIN=1
+  const MAX=6
+  
   	// initialize variables
 	let answer = ""
 	
 	// get user input
 	let guess = parseInt(document.getElementById('guess').value)
 
+  // generate random number between 1 and 6
+  let randomNum = Math.floor((Math.random() * MAX) + MIN);
 
   	// if guess is random number, display "Correct"
-	if (guess random) {
+	if (randomNum==guess) {
 		answer = "Correct!"
 	} 
 
+  	// if guess is not random number, display "Incorrect! The correct answer was random number"
+	if (guess!=randomNum) {
+		answer = "Incorrect! The correct answer was "+randomNum+"."
+	} 
+
+
+  
   // display the results
   document.getElementById('answer').innerHTML = answer
 }
